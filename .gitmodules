@@ -1,0 +1,6 @@
+[submodule "liquidhaskell"]
+	path = liquidhaskell
+	url = git@github.com:yiyunliu/liquidhaskell
+[submodule "liquid-base"]
+	path = liquid-base
+	url = git@github.com:plum-umd/liquid-base.git
