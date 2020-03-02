@@ -10,14 +10,10 @@ import           Criterion.Types
 
 removeTmpAndRunLiquid :: String -> IO ()
 removeTmpAndRunLiquid str =
-  flip catch ((\_ -> pure ()) :: ExitCode -> IO ())
+  handle ((\_ -> pure ()) :: ExitCode -> IO ())
     . withCurrentDirectory "liquid-base/liquid-base/src"
-    $ do
+    $ liquid [str]
 
-        b <- doesPathExist tmpPath
-        when b (removeDirectoryRecursive tmpPath)
-        liquid [str]
-  where tmpPath = str <> "/.liquid"
 
 
 
@@ -30,14 +26,33 @@ functors =
   , "Data/List/Functor.hs"
   , "Data/Maybe/Functor.hs"
   , "Data/Reader/Functor.hs"
-  -- , "Data/Successors/Functor.hs"
   ]
+
+semigroups :: [FilePath]
+semigroups =
+  [ "Data/All/Semigroup.hs"
+  , "Data/Any/Semigroup.hs"
+  , "Data/Dual/Semigroup.hs"
+  , "Data/Endo/Semigroup.hs"
+  , "Data/Functor/Identity/Semigroup.hs"
+  , "Data/List/Semigroup.hs"
+  , "Data/Maybe/Semigroup.hs"
+  , "Data/Num/Semigroup.hs"
+  , "Data/PNat/Semigroup.hs"
+  ]
+
 
 makeBench :: FilePath -> Benchmark
 makeBench f = bench f $ nfIO (removeTmpAndRunLiquid f)
 
 main :: IO ()
-main =
-  defaultMainWith defaultConfig { resamples = 5 } $ fmap makeBench functors
+main = defaultMainWith
+  defaultConfig
+  [ bgroup "Semigroup" $ fmap makeBench semigroups
+  , bgroup "Functor" $ fmap makeBench functors
+  -- very very slow!
+  , bgroup "Succs" [makeBench "Data/Successors/Functor.hs"]
+  , bgroup "Foldable" [makeBench "Data/Foldable/Classes.hs"]
+  ]
 
 
