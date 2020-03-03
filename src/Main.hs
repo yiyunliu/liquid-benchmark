@@ -19,6 +19,25 @@ removeTmpAndRunLiquid str =
     handler e           = throw e
 
 
+dependencies :: [FilePath]
+dependencies =
+  [ "Data/Semigroup/Classes.hs"
+  , "Data/Functor/Classes.hs"
+  , "Data/Any.hs"
+  , "Data/Functor/Const.hs"
+  , "Data/Dual.hs"
+  , "Data/Either.hs"
+  , "Data/Endo.hs"
+  , "Data/Function.hs"
+  , "Data/Functor/Identity.hs"
+  , "Data/Functor/State.hs"
+  , "Data/List.hs"
+  , "Data/List/NonEmpty.hs"
+  , "Data/Maybe.hs"
+  , "Data/PNat.hs"
+  , "Data/Reader.hs"
+  , "Liquid/ProofCombinators.hs"
+  ]
 
 
 functors :: [FilePath]
@@ -59,7 +78,8 @@ makeBench f = bench f $ nfIO (removeTmpAndRunLiquid f)
 main :: IO ()
 main = defaultMainWith
   defaultConfig
-  [ bgroup "Semigroup" $ fmap makeBench semigroups
+  [ bgroup "Dependencies" $ fmap makeBench dependencies
+  , bgroup "Semigroup" $ fmap makeBench semigroups
   , bgroup "Functor" $ fmap makeBench functors
   -- very very slow!
   , bgroup "Foldable" $ fmap makeBench foldables
