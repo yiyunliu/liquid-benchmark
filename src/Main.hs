@@ -10,9 +10,13 @@ import           Criterion.Types
 
 removeTmpAndRunLiquid :: String -> IO ()
 removeTmpAndRunLiquid str =
-  handle ((\_ -> pure ()) :: ExitCode -> IO ())
+  handle handler
     . withCurrentDirectory "liquid-base/liquid-base/src"
     $ liquid [str]
+
+  where
+    handler ExitSuccess = pure ()
+    handler e           = throw e
 
 
 
