@@ -19,26 +19,26 @@ removeTmpAndRunLiquid str =
 
 functors :: [FilePath]
 functors =
-  [ "Data/Either/Functor.hs" -- VMonad
-  , "Data/Functor/Const/Functor.hs" -- VFunctor
-  , "Data/Functor/Identity/Functor.hs" -- VMonad
-  , "Data/Functor/State/Functor.hs" -- VFunctor
-  , "Data/List/Functor.hs" -- VMonad
-  , "Data/Maybe/Functor.hs" -- VMonad
-  , "Data/Reader/Functor.hs" -- VApplicative
+  [ "Data/Either/Functor.hs" -- VMonad 3
+  , "Data/Functor/Const/Functor.hs" -- VFunctor 1
+  , "Data/Functor/Identity/Functor.hs" -- VMonad 3
+  , "Data/Functor/State/Functor.hs" -- VFunctor 1
+  , "Data/List/Functor.hs" -- VMonad 3
+  , "Data/Maybe/Functor.hs" -- VMonad 3
+  , "Data/Reader/Functor.hs" -- VApplicative 2
   ]
 
 semigroups :: [FilePath]
 semigroups =
-  [ "Data/All/Semigroup.hs" -- VMonoid
-  , "Data/Any/Semigroup.hs" -- VMonoid
-  , "Data/Dual/Semigroup.hs" -- VMonoid 
-  , "Data/Endo/Semigroup.hs" -- VMonoid
-  , "Data/Functor/Identity/Semigroup.hs" -- VMonoid
-  , "Data/List/Semigroup.hs" -- VMonoid
-  , "Data/Maybe/Semigroup.hs" -- VMonoid
-  , "Data/Num/Semigroup.hs" -- VSemigroup
-  , "Data/PNat/Semigroup.hs" -- VMonoid
+  [ "Data/All/Semigroup.hs" -- VMonoid 2
+  , "Data/Any/Semigroup.hs" -- VMonoid 2
+  , "Data/Dual/Semigroup.hs" -- VMonoid 2
+  , "Data/Endo/Semigroup.hs" -- VMonoid 2
+  , "Data/Functor/Identity/Semigroup.hs" -- VMonoid 2
+  , "Data/List/Semigroup.hs" -- VMonoid 2
+  , "Data/Maybe/Semigroup.hs" -- VMonoid 2
+  , "Data/Num/Semigroup.hs" -- VSemigroup 1
+  , "Data/PNat/Semigroup.hs" -- VMonoid 2
   ]
 
 foldables :: [FilePath]
@@ -58,8 +58,8 @@ main = defaultMainWith
   [ bgroup "Semigroup" $ fmap makeBench semigroups
   , bgroup "Functor" $ fmap makeBench functors
   -- very very slow!
-  -- , bgroup "Succs"    [makeBench "Data/Successors/Functor.hs"]
   , bgroup "Foldable" $ fmap makeBench foldables
+  , bgroup "Succs"    [makeBench "Data/Successors/Functor.hs"]
   ]
 
 
