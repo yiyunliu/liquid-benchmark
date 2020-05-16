@@ -19,6 +19,11 @@ executable liquid-benchmark
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
                      , criterion
-                     , liquidhaskell
+                     , containers
+                     , deepseq
                      , directory
+                     , dsp
+                     , liquidhaskell
+                     , process
+                     , timeit
 
