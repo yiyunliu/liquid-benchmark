@@ -18,7 +18,7 @@ benchmark :: Int -> [String] -> IO (Map.Map String [Double])
 benchmark n files = helper mempty n files
 
   where
-    helper acc c _ | c < 0 = return acc
+    helper acc c _ | c <= 0 = return acc
     helper acc c []        = do
         -- delete temp
         callCommand $ "find " <> dir <> " | grep \".liquid\" | xargs rm -rf"
