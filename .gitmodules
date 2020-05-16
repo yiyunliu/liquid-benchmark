@@ -4,3 +4,6 @@
 [submodule "liquid-base"]
 	path = liquid-base
 	url = git@github.com:plum-umd/liquid-base.git
+[submodule "vrdt"]
+	path = vrdt
+	url = https://github.com/jprider63/vrdt.git
