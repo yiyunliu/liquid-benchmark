@@ -136,16 +136,16 @@ vrdtModules = [
   , "VRDT/Class/Proof.hs" -- dependency of twopmap
 
   , "VRDT/Internal.hs" -- despite the module name, it's only used in twopmap
-  , "TwoPMap/Internal.hs"
-  , "TwoPMap/LemmaID.hs"
-  , "TwoPMap/LemmaDD.hs"
-  , "TwoPMap/LemmaAD.hs"
-  , "TwoPMap/LemmaDA.hs"
-  , "TwoPMap/LemmaDI.hs"
-  , "TwoPMap/LemmaII.hs"
-  , "TwoPMap/LemmaAA.hs"
-  , "TwoPMap/LemmaIA.hs"
-  , "TwoPMap/LemmaAI.hs"
+  , "VRDT/TwoPMap/Internal.hs"
+  , "VRDT/TwoPMap/LemmaID.hs"
+  , "VRDT/TwoPMap/LemmaDD.hs"
+  , "VRDT/TwoPMap/LemmaAD.hs"
+  , "VRDT/TwoPMap/LemmaDA.hs"
+  , "VRDT/TwoPMap/LemmaDI.hs"
+  , "VRDT/TwoPMap/LemmaII.hs"
+  , "VRDT/TwoPMap/LemmaAA.hs"
+  , "VRDT/TwoPMap/LemmaIA.hs"
+  , "VRDT/TwoPMap/LemmaAI.hs"
   , "VRDT/TwoPMap.hs"
   ]
 
