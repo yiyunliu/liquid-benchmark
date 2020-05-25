@@ -2,12 +2,12 @@ name:                liquid-benchmark
 version:             0.1.0.0
 -- synopsis:
 -- description:
-homepage:            https://github.com/githubuser/liquid-benchmark#readme
+homepage:            https://github.com/yiyunliu/liquid-benchmark#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2020 Author name here
+author:              Yiyun Liu
+maintainer:          liuyiyun@terpmail.umd.edu
+copyright:           2020 Yiyun Liu
 category:            Web
 build-type:          Simple
 cabal-version:       >=1.10
@@ -26,4 +26,5 @@ executable liquid-benchmark
                      , liquidhaskell
                      , process
                      , timeit
-
+                     , pipes
+  ghc-options: -threaded
