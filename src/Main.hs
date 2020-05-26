@@ -113,28 +113,15 @@ vrdtModules =
   , "Liquid/Data/Map/Props.hs"
   , "Liquid/Data/List.hs"
   , "VRDT/Class.hs"
-
+  , "VRDT/Class/Proof.hs" -- dependency of twopmap
 
   -- Benchmarks
   , "VRDT/Max.hs"
   , "VRDT/Min.hs"
   , "VRDT/Sum.hs"
   , "VRDT/LWW.hs"
-  , "VRDT/MultiSet/Internal.hs"
   , "VRDT/MultiSet.hs"
   , "VRDT/MultiSet/Proof.hs"
-  , "VRDT/Class/Proof.hs" -- dependency of twopmap
-  , "VRDT/Internal.hs" -- despite the module name, it's only used in twopmap
-  , "VRDT/TwoPMap/Internal.hs"
-  , "VRDT/TwoPMap/LemmaID.hs"
-  , "VRDT/TwoPMap/LemmaDD.hs"
-  , "VRDT/TwoPMap/LemmaAD.hs"
-  , "VRDT/TwoPMap/LemmaDA.hs"
-  , "VRDT/TwoPMap/LemmaDI.hs"
-  , "VRDT/TwoPMap/LemmaII.hs"
-  , "VRDT/TwoPMap/LemmaAA.hs"
-  , "VRDT/TwoPMap/LemmaIA.hs"
-  , "VRDT/TwoPMap/LemmaAI.hs"
   , "VRDT/TwoPMap.hs"
   ]
 
