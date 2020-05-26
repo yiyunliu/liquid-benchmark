@@ -3,7 +3,6 @@ module Main where
 import           Criterion.Main
 import           Language.Haskell.Liquid.Liquid
 import           System.Exit
-import           Control.DeepSeq
 import           Control.Monad
 import           Control.Exception
 import qualified Data.Map.Strict               as Map
