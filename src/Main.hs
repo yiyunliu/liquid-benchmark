@@ -41,7 +41,7 @@ removeTmpAndRunLiquid dir str =
 
   args =
     words
-      "--cores=8 --typeclass --ghc-option=-XTypeFamilies --ghc-option=-XFlexibleContexts --ghc-option=-XBangPatterns --ghc-option=-XTypeFamilyDependencies --ghc-option=-cpp"
+      "--cores=12 --typeclass --ghc-option=-XTypeFamilies --ghc-option=-XFlexibleContexts --ghc-option=-XBangPatterns --ghc-option=-XTypeFamilyDependencies --ghc-option=-cpp"
 
 
 dependencies :: [FilePath]
