@@ -30,7 +30,6 @@ benchmarkOne = do
 removeTmpAndRunLiquid :: String -> String -> IO ()
 removeTmpAndRunLiquid dir str =
   handle handler
-    -- . withCurrentDirectory dir -- "liquid-base/liquid-base/src"
     $  liquid
     $  ["-i", dir]
     <> args
