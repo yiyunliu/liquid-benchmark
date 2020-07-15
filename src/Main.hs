@@ -111,6 +111,7 @@ vrdtModules =
   , "Liquid/Data/Map/Props.hs"
   , "Liquid/Data/List.hs"
   , "VRDT/Class.hs"
+  , "VRDT/Internal.hs"
   , "VRDT/Class/Proof.hs" -- dependency of twopmap
 
   -- Benchmarks
@@ -121,6 +122,8 @@ vrdtModules =
   , "VRDT/MultiSet.hs"
   , "VRDT/MultiSet/Proof.hs"
   , "VRDT/TwoPMap.hs"
+  , "Event/Types.hs"
+  , "VRDT/CausalTree.hs"
   ]
 
 
