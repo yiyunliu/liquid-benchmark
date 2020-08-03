@@ -3,49 +3,45 @@ module Main where
 import           Criterion.Main
 import           Language.Haskell.Liquid.Liquid
 import           System.Exit
-import           System.Directory
-import           Control.DeepSeq
 import           Control.Monad
 import           Control.Exception
--- import           Criterion.Measurement (time_)
-import           Criterion.Types
-import qualified Data.Map as Map
+import qualified Data.Map.Strict               as Map
 import           Numeric.Statistics.Moment
 import           System.Process
 import           System.TimeIt
+import           Pipes
+import qualified Pipes.Prelude                 as P
 
-benchmark :: Int -> [String] -> IO (Map.Map String [Double])
-benchmark n files = helper mempty n files
+vrdtDir :: String
+vrdtDir = "vrdt/vrdt/src/"
 
-  where
-    helper acc c _ | c <= 0 = return acc
-    helper acc c []        = do
-        -- delete temp
-        callCommand $ "find " <> dir <> " | grep \".liquid\" | xargs rm -rf"
-        
-        helper acc (c-1) files
-    helper acc c (f:fs)    = do
-      t <- fmap fst $ timeItT $ do
-        res <- removeTmpAndRunLiquid dir f
-        return $ force res
+benchmarkAll :: [String] -> Producer (String, [Double]) IO ()
+benchmarkAll files =
+  lift
+      (callCommand $ "find " <> vrdtDir <> " | grep \".liquid\" | xargs rm -rf")
+    >> (each files >-> forever benchmarkOne)
 
-      helper (Map.insertWith (++) f [t] acc) c fs
-
-    -- WARNING: Be careful with this string! It is sent to a shell command.
-    dir = "vrdt/vrdt/src/"
-
+benchmarkOne :: Pipe String (String, [Double]) IO ()
+benchmarkOne = do
+  file   <- await
+  (t, _) <- timeItT $ lift (removeTmpAndRunLiquid vrdtDir file)
+  yield (file, [t])
 
 removeTmpAndRunLiquid :: String -> String -> IO ()
 removeTmpAndRunLiquid dir str =
   handle handler
-    -- . withCurrentDirectory dir -- "liquid-base/liquid-base/src"
-    $ liquid $ ["-i", dir] <> args <> [dir <> str]
+    $  liquid
+    $  ["-i", dir]
+    <> args
+    <> [dir <> str]
 
-  where
-    handler ExitSuccess = pure ()
-    handler e           = throw e
+ where
+  handler ExitSuccess = pure ()
+  handler e           = throw e
 
-    args = words "--typeclass --ghc-option=-XTypeFamilies --ghc-option=-XFlexibleContexts --ghc-option=-XBangPatterns --ghc-option=-XTypeFamilyDependencies --ghc-option=-cpp"
+  args =
+    words
+      "--cores=12 --typeclass --ghc-option=-XTypeFamilies --ghc-option=-XFlexibleContexts --ghc-option=-XBangPatterns --ghc-option=-XTypeFamilyDependencies --ghc-option=-cpp"
 
 
 dependencies :: [FilePath]
@@ -102,15 +98,12 @@ foldables =
   ]
 
 makeBench :: FilePath -> Benchmark
-makeBench f = bench f $ nfIO (removeTmpAndRunLiquid "liquid-base/liquid-base/src" f)
-
-vrdt = "VRDT/Class.hs"
-strongconvergence = "VRDT/Class/Proof.hs"
-multiset = "VRDT/MultiSet.hs" -- , "vrdt/vrdt/src/VRDT/MultiSet/Internal.hs"]
-
+makeBench f =
+  bench f $ nfIO (removeTmpAndRunLiquid "liquid-base/liquid-base/src" f)
 
 vrdtModules :: [FilePath]
-vrdtModules = [
+vrdtModules =
+  [
   -- Dependencies
     "Liquid/Data/Maybe.hs"
   , "Liquid/ProofCombinators.hs"
@@ -118,6 +111,8 @@ vrdtModules = [
   , "Liquid/Data/Map/Props.hs"
   , "Liquid/Data/List.hs"
   , "VRDT/Class.hs"
+  , "VRDT/Internal.hs"
+  , "VRDT/Class/Proof.hs" -- dependency of twopmap
 
   -- Benchmarks
   , "VRDT/Max.hs"
@@ -125,35 +120,24 @@ vrdtModules = [
   , "VRDT/Sum.hs"
   , "VRDT/LWW.hs"
   , "VRDT/MultiSet.hs"
-  , "VRDT/Class/Proof.hs"
-  -- , "VRDT/TwoPMap.hs"
+  , "VRDT/MultiSet/Proof.hs"
+  , "VRDT/TwoPMap.hs"
+  , "Event/Types.hs"
+  , "VRDT/CausalTree.hs"
   ]
 
 
 main :: IO ()
--- main = defaultMainWith
---   defaultConfig
---   [ bgroup "Dependencies" $ fmap makeBench dependencies
---   , bgroup "Semigroup" $ fmap makeBench semigroups
---   , bgroup "Functor" $ fmap makeBench functors
---   -- very very slow!
---   , bgroup "Foldable" $ fmap makeBench foldables
---   , bgroup "Succs"    [makeBench "Data/Successors/Functor.hs"]
---   ]
 main = do
-
-  -- Map FilePath [Time]
-  res <- benchmark n vrdtModules
-  -- let res = Map.fromList [("test", [1,2,3])]
-  mapM_ (\(filepath, times) -> do
-      putStrLn filepath
-      putStrLn $ show times
-      putStrLn $ show (mean times) <> " (" <> show (stddev times) <> ")"
-      putStrLn ""
-    
-    ) $ Map.toList res
-
-  where
-    n = 3
-
-
+  res <- P.fold (flip $ uncurry (Map.insertWith (++)))
+                mempty
+                id
+                (replicateM_ 3 (benchmarkAll vrdtModules))
+  mapM_
+      (\(filepath, times) -> do
+        putStrLn filepath
+        print times
+        putStrLn $ show (mean times) <> " (" <> show (stddev times) <> ")"
+        putStrLn ""
+      )
+    $ Map.toList res

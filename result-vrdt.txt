@@ -1,0 +1,1778 @@
+LiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/Liquid/Data/Maybe.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/Liquid/ProofCombinators.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/ProofCombinators.hs
+         vrdt/vrdt/src/Liquid/Data/Map.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/Liquid/Data/Map/Props.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/Liquid/Data/List.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Class.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Max.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Min.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Sum.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Types.hs
+         vrdt/vrdt/src/VRDT/LWW.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/MultiSet/Internal.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/MultiSet.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/MultiSet/Proof.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Class/Proof.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Internal.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/Internal.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaID.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaDD.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaAD.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaDA.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaDI.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaII.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaAAEq.hs
+         vrdt/vrdt/src/VRDT/TwoPMap/LemmaAANeq.hs
+         vrdt/vrdt/src/VRDT/TwoPMap/LemmaAA.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaIAC.hs
+         vrdt/vrdt/src/VRDT/TwoPMap/LemmaIANeq.hs
+         vrdt/vrdt/src/VRDT/TwoPMap/LemmaIA.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaAI.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/Liquid/Data/Maybe.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/Liquid/ProofCombinators.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/ProofCombinators.hs
+         vrdt/vrdt/src/Liquid/Data/Map.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/Liquid/Data/Map/Props.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/Liquid/Data/List.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Class.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Max.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Min.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Sum.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Types.hs
+         vrdt/vrdt/src/VRDT/LWW.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/MultiSet/Internal.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/MultiSet.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/MultiSet/Proof.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Class/Proof.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Internal.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/Internal.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaID.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaDD.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaAD.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaDA.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaDI.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaII.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaAAEq.hs
+         vrdt/vrdt/src/VRDT/TwoPMap/LemmaAANeq.hs
+         vrdt/vrdt/src/VRDT/TwoPMap/LemmaAA.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaIAC.hs
+         vrdt/vrdt/src/VRDT/TwoPMap/LemmaIANeq.hs
+         vrdt/vrdt/src/VRDT/TwoPMap/LemmaIA.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaAI.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/Liquid/Data/Maybe.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/Liquid/ProofCombinators.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/ProofCombinators.hs
+         vrdt/vrdt/src/Liquid/Data/Map.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/Liquid/Data/Map/Props.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/Liquid/Data/List.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Class.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Max.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Min.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Sum.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Types.hs
+         vrdt/vrdt/src/VRDT/LWW.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/MultiSet/Internal.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/MultiSet.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/MultiSet/Proof.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Class/Proof.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/Internal.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/Internal.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaID.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaDD.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaAD.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaDA.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaDI.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaII.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaAAEq.hs
+         vrdt/vrdt/src/VRDT/TwoPMap/LemmaAANeq.hs
+         vrdt/vrdt/src/VRDT/TwoPMap/LemmaAA.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaIAC.hs
+         vrdt/vrdt/src/VRDT/TwoPMap/LemmaIANeq.hs
+         vrdt/vrdt/src/VRDT/TwoPMap/LemmaIA.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0m[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap/LemmaAI.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquidHaskell Version 0.8.6.0, Git revision 49a11f35efa62cd0732ed707a5997591003d0a85 [HEAD@49a11f35efa62cd0732ed707a5997591003d0a85 (Thu May 21 20:39:27 2020 -0400)] 
+Copyright 2013-19 Regents of the University of California. All Rights Reserved.
+
+Targets: vrdt/vrdt/src/VRDT/TwoPMap.hs
+[1;94m
+**** DONE:  A-Normalization ****************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Extracted Core using GHC *******************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  Transformed Core ***************************************************
+[0m[1;90m 
+[0m[1;94m
+**** DONE:  annotate ***********************************************************
+[0m[1;90m 
+[0m[1;92m
+**** RESULT: SAFE **************************************************************
+[0mLiquid/Data/List.hs
+[1.472197963,1.782009462,0.323560689]
+1.192589371333333 (0.7683774653558392)
+
+Liquid/Data/Map.hs
+[4.269831588,3.83324453,1.224760226]
+3.109278781333334 (1.6465751436997944)
+
+Liquid/Data/Map/Props.hs
+[31.086361875999998,31.66697456,11.837647396]
+24.863661277333332 (11.284593745444358)
+
+Liquid/Data/Maybe.hs
+[1.654815639,1.308766897,0.507119796]
+1.1569007773333333 (0.5887265288203241)
+
+Liquid/ProofCombinators.hs
+[1.5434287279999999,1.613079872,0.380426802]
+1.1789784673333332 (0.6924423384803294)
+
+VRDT/Class.hs
+[1.251024108,1.088933145,0.373311468]
+0.9044229069999998 (0.4670416368473531)
+
+VRDT/Class/Proof.hs
+[152.498843565,151.35597921,165.174523028]
+156.34311526766666 (7.669540860145375)
+
+VRDT/Internal.hs
+[9.224729744,10.015757776,10.09169297]
+9.777393496666667 (0.48012441726666705)
+
+VRDT/LWW.hs
+[4.481490308,2.855647457,0.71977961]
+2.685639125 (1.8866091191802232)
+
+VRDT/Max.hs
+[1.539829219,1.506821958,0.506876569]
+1.1845092486666668 (0.5870791311517136)
+
+VRDT/Min.hs
+[1.6010824319999999,1.7244737239999999,0.553262427]
+1.2929395276666666 (0.643543326181961)
+
+VRDT/MultiSet.hs
+[2.041058169,2.306466378,2.023952635]
+2.123825727333333 (0.158402510334634)
+
+VRDT/MultiSet/Internal.hs
+[69.222511709,69.978052038,63.670165585999996]
+67.62357644433332 (3.4445323860108075)
+
+VRDT/MultiSet/Proof.hs
+[49.912646637,46.197293312,41.006464017]
+45.70546798866667 (4.473414951320912)
+
+VRDT/Sum.hs
+[1.625467582,1.8594654099999999,0.427480251]
+1.3041377476666667 (0.7681699165702724)
+
+VRDT/TwoPMap.hs
+[38.959765225,37.566905747999996,37.479008397]
+38.00189312333333 (0.8307049466818476)
+
+VRDT/TwoPMap/Internal.hs
+[3.346227254,3.275982941,3.927902186]
+3.516704127 (0.357835784503501)
+
+VRDT/TwoPMap/LemmaAA.hs
+[188.945965087,189.986633636,193.20070375699999]
+190.71110082666664 (2.2179584802837646)
+
+VRDT/TwoPMap/LemmaAD.hs
+[172.592183943,169.203640525,181.763887745]
+174.519904071 (6.498232931020688)
+
+VRDT/TwoPMap/LemmaAI.hs
+[121.12090960399999,123.975001667,123.266403856]
+122.78743837566667 (1.486107776890061)
+
+VRDT/TwoPMap/LemmaDA.hs
+[4.412825573,3.525352647,3.7483428979999998]
+3.8955070393333333 (0.46167630648164454)
+
+VRDT/TwoPMap/LemmaDD.hs
+[3.134773026,2.904816991,2.273701036]
+2.771097017666667 (0.4458385542344231)
+
+VRDT/TwoPMap/LemmaDI.hs
+[3.0226762799999998,2.947331742,3.086331419]
+3.018779813666667 (6.958171016108466e-2)
+
+VRDT/TwoPMap/LemmaIA.hs
+[4698.433690425,4812.911914132,4695.443173916]
+4735.596259491001 (66.9740146375623)
+
+VRDT/TwoPMap/LemmaID.hs
+[64.118325157,63.010738294999996,66.360832925]
+64.49663212566666 (1.7067866385096384)
+
+VRDT/TwoPMap/LemmaII.hs
+[321.540735868,312.832150795,318.946265228]
+317.77305063033333 (4.471262446172579)
+
