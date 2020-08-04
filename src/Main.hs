@@ -16,7 +16,8 @@ import qualified Pipes.Prelude                 as P
 data Config = Config
   { cores :: Int
   , benchType :: BenchmarkType
-  , numTimes :: Int }
+  , numTimes :: Int
+  , fast :: Bool }
 
 config :: Parser Config
 config = Config
@@ -33,6 +34,10 @@ config = Config
    <> showDefault
    <> value 3
    <> metavar "INT")
+  <*> switch
+    ( long "fast"
+   <> help "Leave out the tests that take too much time or space to finish."
+   <> short 'f')
 
 benchmarkType :: Parser BenchmarkType
 benchmarkType = vrdt <|> liquidBase
@@ -50,9 +55,11 @@ liquidBase = flag' VRDT
 data BenchmarkType = VRDT | LiquidBase 
 
 mkBenchFromConfig :: Config -> Producer (String, [Double]) IO ()
-mkBenchFromConfig (Config cores VRDT _) = benchmarkAll cores vrdtDir vrdtModules
-mkBenchFromConfig (Config cores LiquidBase _) = benchmarkAll cores liquidBaseDir $
-  dependencies ++ functors ++ semigroups ++ foldables
+mkBenchFromConfig (Config cores VRDT _ fast) =
+  benchmarkAll cores vrdtDir (if fast then vrdtModules else vrdtModules ++ vrdtModulesSlow)
+mkBenchFromConfig (Config cores LiquidBase _ fast) =
+  benchmarkAll cores liquidBaseDir $
+  dependencies ++ (if fast then functors else functors ++ functorsSlow) ++ semigroups ++ foldables
 
 
 vrdtDir :: String
@@ -123,6 +130,9 @@ functors =
   , "Data/Reader/Functor.hs" -- VApplicative 2
   ]
 
+functorsSlow :: [FilePath]
+functorsSlow = pure "Data/Successors/Functor.hs"
+
 semigroups :: [FilePath]
 semigroups =
   [ "Data/All/Semigroup.hs" -- VMonoid 2
@@ -164,11 +174,13 @@ vrdtModules =
   , "VRDT/LWW.hs"
   , "VRDT/MultiSet.hs"
   , "VRDT/MultiSet/Proof.hs"
-  , "VRDT/TwoPMap.hs"
+--   , "VRDT/TwoPMap.hs"
   , "Event/Types.hs"
-  , "VRDT/CausalTree.hs"
+--   , "VRDT/CausalTree.hs"
   ]
 
+vrdtModulesSlow :: [FilePath]
+vrdtModulesSlow = ["VRDT/CausalTree.hs", "VRDT/TwoPMap.hs"]
 
 opts :: ParserInfo Config
 opts = info (config <**> helper)
