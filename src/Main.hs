@@ -1,9 +1,9 @@
 module Main where
 
-import           Criterion.Main
 import           Language.Haskell.Liquid.Liquid
 import           System.Exit
 import           Control.Monad
+import           Options.Applicative
 import           Control.Exception
 import qualified Data.Map.Strict               as Map
 import           Numeric.Statistics.Moment
@@ -12,26 +12,73 @@ import           System.TimeIt
 import           Pipes
 import qualified Pipes.Prelude                 as P
 
+
+data Config = Config
+  { cores :: Int
+  , benchType :: BenchmarkType
+  , numTimes :: Int }
+
+config :: Parser Config
+config = Config
+  <$> option auto
+    ( long "cores"
+   <> help "Number of cores used to solve constraints"
+   <> showDefault
+   <> value 4
+   <> metavar "INT")
+  <*> benchmarkType
+  <*> option auto
+    ( long "times"
+   <> help "Number of times to run the benchmark"
+   <> showDefault
+   <> value 3
+   <> metavar "INT")
+
+benchmarkType :: Parser BenchmarkType
+benchmarkType = vrdt <|> liquidBase
+
+vrdt :: Parser BenchmarkType
+vrdt = flag' VRDT
+  (long "vrdt"
+  <> help "Run the benchmark for vrdt")
+
+liquidBase :: Parser BenchmarkType
+liquidBase = flag' VRDT
+  (long "liquid-base"
+  <> help "Run the benchmark for liquid-base")
+
+data BenchmarkType = VRDT | LiquidBase 
+
+mkBenchFromConfig :: Config -> Producer (String, [Double]) IO ()
+mkBenchFromConfig (Config cores VRDT _) = benchmarkAll cores vrdtDir vrdtModules
+mkBenchFromConfig (Config cores LiquidBase _) = benchmarkAll cores liquidBaseDir $
+  dependencies ++ functors ++ semigroups ++ foldables
+
+
 vrdtDir :: String
 vrdtDir = "vrdt/vrdt/src/"
 
-benchmarkAll :: [String] -> Producer (String, [Double]) IO ()
-benchmarkAll files =
-  lift
-      (callCommand $ "find " <> vrdtDir <> " | grep \".liquid\" | xargs rm -rf")
-    >> (each files >-> forever benchmarkOne)
+liquidBaseDir :: String
+liquidBaseDir = "liquid-base/liquid-base/src"
 
-benchmarkOne :: Pipe String (String, [Double]) IO ()
-benchmarkOne = do
+benchmarkAll :: Int -> String -> [String] -> Producer (String, [Double]) IO ()
+benchmarkAll cores dir files =
+  lift
+      (callCommand $ "find " <> dir <> " | grep \".liquid\" | xargs rm -rf")
+    >> (each files >-> forever (benchmarkOne cores))
+
+benchmarkOne :: Int -> Pipe String (String, [Double]) IO ()
+benchmarkOne cores = do
   file   <- await
-  (t, _) <- timeItT $ lift (removeTmpAndRunLiquid vrdtDir file)
+  (t, _) <- timeItT $ lift (removeTmpAndRunLiquid cores vrdtDir file)
   yield (file, [t])
 
-removeTmpAndRunLiquid :: String -> String -> IO ()
-removeTmpAndRunLiquid dir str =
+removeTmpAndRunLiquid :: Int -> String -> String -> IO ()
+removeTmpAndRunLiquid cores dir str =
   handle handler
     $  liquid
     $  ["-i", dir]
+    <> ["--cores=" ++ show cores]
     <> args
     <> [dir <> str]
 
@@ -41,7 +88,7 @@ removeTmpAndRunLiquid dir str =
 
   args =
     words
-      "--cores=12 --typeclass --ghc-option=-XTypeFamilies --ghc-option=-XFlexibleContexts --ghc-option=-XBangPatterns --ghc-option=-XTypeFamilyDependencies --ghc-option=-cpp"
+      "--typeclass --ghc-option=-XTypeFamilies --ghc-option=-XFlexibleContexts --ghc-option=-XBangPatterns --ghc-option=-XTypeFamilyDependencies --ghc-option=-cpp"
 
 
 dependencies :: [FilePath]
@@ -97,10 +144,6 @@ foldables =
   , "Data/Maybe/Foldable.hs"
   ]
 
-makeBench :: FilePath -> Benchmark
-makeBench f =
-  bench f $ nfIO (removeTmpAndRunLiquid "liquid-base/liquid-base/src" f)
-
 vrdtModules :: [FilePath]
 vrdtModules =
   [
@@ -127,12 +170,19 @@ vrdtModules =
   ]
 
 
+opts :: ParserInfo Config
+opts = info (config <**> helper)
+  (fullDesc
+  <> progDesc "Run the benchmark for vrdt or liquid-base"
+  <> header "liquid-benchmark - a driver for running LH typeclass benchmark")
+
 main :: IO ()
 main = do
+  cfg <- execParser opts
   res <- P.fold (flip $ uncurry (Map.insertWith (++)))
                 mempty
                 id
-                (replicateM_ 3 (benchmarkAll vrdtModules))
+                (replicateM_ (numTimes cfg) (mkBenchFromConfig cfg))
   mapM_
       (\(filepath, times) -> do
         putStrLn filepath
