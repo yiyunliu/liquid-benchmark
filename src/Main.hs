@@ -48,7 +48,7 @@ vrdt = flag' VRDT
   <> help "Run the benchmark for vrdt")
 
 liquidBase :: Parser BenchmarkType
-liquidBase = flag' VRDT
+liquidBase = flag' LiquidBase
   (long "liquid-base"
   <> help "Run the benchmark for liquid-base")
 
@@ -59,25 +59,25 @@ mkBenchFromConfig (Config cores VRDT _ fast) =
   benchmarkAll cores vrdtDir (if fast then vrdtModules else vrdtModules ++ vrdtModulesSlow)
 mkBenchFromConfig (Config cores LiquidBase _ fast) =
   benchmarkAll cores liquidBaseDir $
-  dependencies ++ (if fast then functors else functors ++ functorsSlow) ++ semigroups ++ foldables
+  dependencies ++ functors ++ functorsSlow ++ semigroups ++ foldables
 
 
 vrdtDir :: String
 vrdtDir = "vrdt/vrdt/src/"
 
 liquidBaseDir :: String
-liquidBaseDir = "liquid-base/liquid-base/src"
+liquidBaseDir = "liquid-base/liquid-base/src/"
 
 benchmarkAll :: Int -> String -> [String] -> Producer (String, [Double]) IO ()
 benchmarkAll cores dir files =
   lift
-      (callCommand $ "find " <> dir <> " | grep \".liquid\" | xargs rm -rf")
-    >> (each files >-> forever (benchmarkOne cores))
+      (callCommand $ "find " <> dir <> " -name \".liquid\" | xargs rm -rf")
+    >> (each files >-> forever (benchmarkOne cores dir))
 
-benchmarkOne :: Int -> Pipe String (String, [Double]) IO ()
-benchmarkOne cores = do
+benchmarkOne :: Int -> String -> Pipe String (String, [Double]) IO ()
+benchmarkOne cores dir = do
   file   <- await
-  (t, _) <- timeItT $ lift (removeTmpAndRunLiquid cores vrdtDir file)
+  (t, _) <- timeItT $ lift (removeTmpAndRunLiquid cores dir file)
   yield (file, [t])
 
 removeTmpAndRunLiquid :: Int -> String -> String -> IO ()
