@@ -81,17 +81,19 @@ benchmarkOne cores dir = do
   yield (file, [t])
 
 removeTmpAndRunLiquid :: Int -> String -> String -> IO ()
-removeTmpAndRunLiquid cores dir str =
+removeTmpAndRunLiquid cores dir str = do
+  putStrLn $ unwords ("liquid":allArgs)
   handle handler
-    $  liquid
-    $  ["-i", dir]
-    <> ["--cores=" ++ show cores]
-    <> args
-    <> [dir <> str]
-
+    $  liquid allArgs
  where
   handler ExitSuccess = pure ()
   handler e           = throw e
+
+  allArgs = 
+      ["-i", dir]
+   <> ["--cores=" ++ show cores]
+   <> args
+   <> [dir <> str]
 
   args =
     words
