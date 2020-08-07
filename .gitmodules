@@ -1,9 +1,9 @@
 [submodule "liquidhaskell"]
 	path = liquidhaskell
-	url = git@github.com:yiyunliu/liquidhaskell
+	url = https://github.com/yiyunliu/liquidhaskell.git
 [submodule "liquid-base"]
 	path = liquid-base
-	url = git@github.com:plum-umd/liquid-base.git
+	url = https://github.com/plum-umd/liquid-base.git
 [submodule "vrdt"]
 	path = vrdt
 	url = https://github.com/jprider63/vrdt.git

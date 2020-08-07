@@ -1,10 +1,10 @@
 module Main where
 
-import           Criterion.Main
 import           Language.Haskell.Liquid.Liquid
 import           Control.DeepSeq                (force)
 import           System.Exit
 import           Control.Monad
+import           Options.Applicative
 import           Control.Exception
 import qualified Data.Map.Strict               as Map
 import           Numeric.Statistics.Moment
@@ -13,36 +13,92 @@ import           System.TimeIt
 import           Pipes
 import qualified Pipes.Prelude                 as P
 
+
+data Config = Config
+  { cores :: Int
+  , benchType :: BenchmarkType
+  , numTimes :: Int
+  , fast :: Bool }
+
+config :: Parser Config
+config = Config
+  <$> option auto
+    ( long "cores"
+   <> help "Number of cores used to solve constraints"
+   <> showDefault
+   <> value 4
+   <> metavar "INT")
+  <*> benchmarkType
+  <*> option auto
+    ( long "times"
+   <> help "Number of times to run the benchmark"
+   <> showDefault
+   <> value 3
+   <> metavar "INT")
+  <*> switch
+    ( long "fast"
+   <> help "Leave out the tests that take too much time or space to finish."
+   <> short 'f')
+
+benchmarkType :: Parser BenchmarkType
+benchmarkType = vrdt <|> liquidBase
+
+vrdt :: Parser BenchmarkType
+vrdt = flag' VRDT
+  (long "vrdt"
+  <> help "Run the benchmark for vrdt")
+
+liquidBase :: Parser BenchmarkType
+liquidBase = flag' LiquidBase
+  (long "liquid-base"
+  <> help "Run the benchmark for liquid-base")
+
+data BenchmarkType = VRDT | LiquidBase 
+
+mkBenchFromConfig :: Config -> Producer (String, [Double]) IO ()
+mkBenchFromConfig (Config cores VRDT _ fast) =
+  benchmarkAll cores vrdtDir (if fast then vrdtModules else vrdtModules ++ vrdtModulesSlow)
+mkBenchFromConfig (Config cores LiquidBase _ fast) =
+  benchmarkAll cores liquidBaseDir $
+  dependencies ++ functors ++ functorsSlow ++ semigroups ++ foldables
+
+
 vrdtDir :: String
 vrdtDir = "vrdt/vrdt/src/"
 
-benchmarkAll :: [String] -> Producer (String, [Double]) IO ()
-benchmarkAll files =
-  lift
-      (callCommand $ "find " <> vrdtDir <> " | grep \".liquid\" | xargs rm -rf")
-    >> (each files >-> forever benchmarkOne)
+liquidBaseDir :: String
+liquidBaseDir = "liquid-base/liquid-base/src/"
 
-benchmarkOne :: Pipe String (String, [Double]) IO ()
-benchmarkOne = do
+benchmarkAll :: Int -> String -> [String] -> Producer (String, [Double]) IO ()
+benchmarkAll cores dir files =
+  lift
+      (callCommand $ "find " <> dir <> " -name \".liquid\" | xargs rm -rf")
+    >> (each files >-> forever (benchmarkOne cores dir))
+
+benchmarkOne :: Int -> String -> Pipe String (String, [Double]) IO ()
+benchmarkOne cores dir = do
   file   <- await
-  (t, _) <- timeItT $ lift (removeTmpAndRunLiquid vrdtDir file)
+  (t, _) <- timeItT $ lift (removeTmpAndRunLiquid cores dir file)
   yield (file, [t])
 
-removeTmpAndRunLiquid :: String -> String -> IO ()
-removeTmpAndRunLiquid dir str =
+removeTmpAndRunLiquid :: Int -> String -> String -> IO ()
+removeTmpAndRunLiquid cores dir str = do
+  putStrLn $ unwords ("liquid":allArgs)
   handle handler
-    $  liquid
-    $  ["-i", dir]
-    <> args
-    <> [dir <> str]
-
+    $  liquid allArgs
  where
   handler ExitSuccess = pure ()
   handler e           = throw e
 
+  allArgs = 
+      ["-i", dir]
+   <> ["--cores=" ++ show cores]
+   <> args
+   <> [dir <> str]
+
   args =
     words
-      "--cores=12 --typeclass --ghc-option=-XTypeFamilies --ghc-option=-XFlexibleContexts --ghc-option=-XBangPatterns --ghc-option=-XTypeFamilyDependencies --ghc-option=-cpp"
+      "--typeclass --ghc-option=-XTypeFamilies --ghc-option=-XFlexibleContexts --ghc-option=-XBangPatterns --ghc-option=-XTypeFamilyDependencies --ghc-option=-cpp"
 
 
 dependencies :: [FilePath]
@@ -77,6 +133,9 @@ functors =
   , "Data/Reader/Functor.hs" -- VApplicative 2
   ]
 
+functorsSlow :: [FilePath]
+functorsSlow = pure "Data/Successors/Functor.hs"
+
 semigroups :: [FilePath]
 semigroups =
   [ "Data/All/Semigroup.hs" -- VMonoid 2
@@ -98,10 +157,6 @@ foldables =
   , "Data/Maybe/Foldable.hs"
   ]
 
-makeBench :: FilePath -> Benchmark
-makeBench f =
-  bench f $ nfIO (removeTmpAndRunLiquid "liquid-base/liquid-base/src" f)
-
 vrdtModules :: [FilePath]
 vrdtModules =
   [
@@ -122,18 +177,28 @@ vrdtModules =
   , "VRDT/LWW.hs"
   , "VRDT/MultiSet.hs"
   , "VRDT/MultiSet/Proof.hs"
-  , "VRDT/TwoPMap.hs"
+--   , "VRDT/TwoPMap.hs"
   , "Event/Types.hs"
-  , "VRDT/CausalTree.hs"
+--   , "VRDT/CausalTree.hs"
   ]
 
+vrdtModulesSlow :: [FilePath]
+vrdtModulesSlow = ["VRDT/CausalTree.hs", "VRDT/TwoPMap.hs"]
+
+opts :: ParserInfo Config
+opts = info (config <**> helper)
+  (fullDesc
+  <> progDesc "Run the benchmark for vrdt or liquid-base"
+  <> header "liquid-benchmark - a driver for running LH typeclass benchmark")
 
 main :: IO ()
 main = do
+
+  cfg <- execParser opts
   res <- P.fold (\m (path, t) -> force $ Map.insertWith (++) path t m)
                 mempty
                 id
-                (replicateM_ 1 (benchmarkAll vrdtModules))
+                (replicateM_ (numTimes cfg) (mkBenchFromConfig cfg))
   mapM_
       (\(filepath, times) -> do
         putStrLn filepath
