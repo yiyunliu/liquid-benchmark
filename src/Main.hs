@@ -2,6 +2,7 @@ module Main where
 
 import           Criterion.Main
 import           Language.Haskell.Liquid.Liquid
+import           Control.DeepSeq                (force)
 import           System.Exit
 import           Control.Monad
 import           Control.Exception
@@ -129,10 +130,10 @@ vrdtModules =
 
 main :: IO ()
 main = do
-  res <- P.fold (flip $ uncurry (Map.insertWith (++)))
+  res <- P.fold (\m (path, t) -> force $ Map.insertWith (++) path t m)
                 mempty
                 id
-                (replicateM_ 3 (benchmarkAll vrdtModules))
+                (replicateM_ 1 (benchmarkAll vrdtModules))
   mapM_
       (\(filepath, times) -> do
         putStrLn filepath
