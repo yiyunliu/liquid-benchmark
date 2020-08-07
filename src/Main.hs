@@ -182,7 +182,7 @@ vrdtModules =
   ]
 
 vrdtModulesSlow :: [FilePath]
-vrdtModulesSlow = ["VRDT/CausalTree.hs", "VRDT/TwoPMap.hs"]
+vrdtModulesSlow = ["VRDT/TwoPMap.hs", "VRDT/CausalTree.hs"]
 
 opts :: ParserInfo Config
 opts = info (config <**> helper)
