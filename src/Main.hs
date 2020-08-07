@@ -1,7 +1,6 @@
 module Main where
 
 import           Language.Haskell.Liquid.Liquid
-import           Control.DeepSeq                (force)
 import           System.Exit
 import           Control.Monad
 import           Options.Applicative
@@ -58,7 +57,7 @@ data BenchmarkType = VRDT | LiquidBase
 mkBenchFromConfig :: Config -> Producer (String, [Double]) IO ()
 mkBenchFromConfig (Config cores VRDT _ fast) =
   benchmarkAll cores vrdtDir (if fast then vrdtModules else vrdtModules ++ vrdtModulesSlow)
-mkBenchFromConfig (Config cores LiquidBase _ fast) =
+mkBenchFromConfig (Config cores LiquidBase _ _) =
   benchmarkAll cores liquidBaseDir $
   dependencies ++ functors ++ functorsSlow ++ semigroups ++ foldables
 
@@ -195,7 +194,7 @@ main :: IO ()
 main = do
 
   cfg <- execParser opts
-  res <- P.fold (\m (path, t) -> force $ Map.insertWith (++) path t m)
+  res <- P.fold (\m (path, t) -> Map.insertWith (++) path t m)
                 mempty
                 id
                 (replicateM_ (numTimes cfg) (mkBenchFromConfig cfg))
