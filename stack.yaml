@@ -1,6 +1,6 @@
 flags:
   liquidhaskell:
-    devel: true
+    no-plugin: true
 extra-package-dbs: []
 ghc-options:
   hscolour: -w
